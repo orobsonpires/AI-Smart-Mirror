@@ -14,13 +14,16 @@ from speech import Speech
 from knowledge import Knowledge
 from vision import Vision
 
-my_name = "Aaron"
-launch_phrase = "ok mirror"
-use_launch_phrase = True
-weather_api_token = "<weather_token>"
-wit_ai_token = "<wit.ai_token>"
-debugger_enabled = True
-camera = 0
+with open("/config/config.json") as json_data_file:
+    configuration = json.load(json_data_file)
+
+my_name = configuration["my_name"]
+launch_phrase = configuration["launch_phrase"]
+use_launch_phrase = configuration["use_launch_phrase"]
+weather_api_token = configuration["weather_api_token"]
+wit_ai_token = configuration["wit_ai_token"]
+debugger_enabled = configuration["debugger_enabled"]
+camera = configuration["camera"]
 
 
 class Bot(object):
