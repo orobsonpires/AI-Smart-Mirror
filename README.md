@@ -68,7 +68,7 @@ Activate the virual evironment
 source hhsmartmirror/bin/activate
 ```
 
-Fill wit.ai, darksky.net tokens, and others options required in config/config.json file
+Set wit.ai, darksky.net tokens, and options values defined in config/config.json file
 
 Make sure MagicMirror is running, then start the AI
 ```shell
