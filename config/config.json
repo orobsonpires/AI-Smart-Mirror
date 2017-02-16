@@ -1,10 +1,10 @@
 {
-        "my_name": "",         
-        "launch_phrase": "",                              
-        "use_launch_phrase": "",                      
+        "my_name": "Rob",         
+        "launch_phrase": "ok, mirror",                              
+        "use_launch_phrase": true,                      
         "weather_api_token": "",                                
         "wit_ai_token": "",                 
-        "debugger_enabled": "",                              
-        "camera": ""                     
+        "debugger_enabled": true,                              
+        "camera": 0                     
 }
 
