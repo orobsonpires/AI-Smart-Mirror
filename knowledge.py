@@ -2,6 +2,8 @@ import requests
 import json
 import feedparser
 import datetime
+import urbandictionary as ud
+from random import randint
 
 
 class Knowledge(object):
@@ -72,4 +74,12 @@ class Knowledge(object):
         holidays = json.loads(r.text)
 
         return holidays
+    
+    def get_random_definition_from_urban_dictionary(search_query):
+        defs = ud.define(search_query)
+        if len(defs) > 0:
+            random_index = randint(0,len(defs))
+            return defs[random_index]
+        else:
+            return "No definition found for " % search_query
 
