@@ -75,7 +75,7 @@ class Knowledge(object):
 
         return holidays
     
-    def get_random_definition_from_urban_dictionary(search_query):
+    def get_random_definition_from_urban_dictionary(self, search_query):
         defs = ud.define(search_query)
         if len(defs) > 0:
             random_index = randint(0,len(defs))
